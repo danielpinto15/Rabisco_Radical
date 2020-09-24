@@ -5,7 +5,7 @@ html {
 .container {
     margin-right: auto;
     margin-left: auto;
-    width: 1024px;
+    width: 80%;
 }
 
 body {
@@ -38,7 +38,7 @@ nav {
 .main {
     height: 400px;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 5%;
     padding-left: 240px;
     padding-right: 240px;
 }
@@ -55,7 +55,7 @@ footer {
     opacity: 50%;
     padding-top: 14px;
     padding-bottom: 14px;
-    margin-top: 20px;
+    margin-top: 5%;
     text-align: center;
 }
 
@@ -64,7 +64,7 @@ footer {
     opacity: 50%;
     padding-top: 14px;
     padding-bottom: 14px;
-    margin-top: 1400px;
+    margin-top: 80px;
     text-align: center;
 }
 
@@ -113,3 +113,45 @@ div.gallery {
     text-align: center;
     color: white;
   }
+
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /*phone friendly*/
+
+  @media only screen and (max-width: 800px) {
+    div.gallery {
+        
+      width: 40%;
+      margin-left: 6%;
+    }
+    .main {
+        margin-left: 10%;
+        width: 80%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    div.gallery {
+        margin-left: 10%;
+        width: 80%;
+    }
+    .main {
+        margin-left: 10%;
+        width: 80%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    footer {
+        margin-top: 10%;
+    }
+  }
+
+  
+
